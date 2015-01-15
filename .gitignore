@@ -2,8 +2,7 @@
 
 
 ### Bower ###
-src/bower_modules/
-test/bower_modules/
+bower_components
 
 #destination folder
 dist/
