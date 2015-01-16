@@ -27,8 +27,7 @@
     "istanbul": "*",
     "mocha": "*",
     "mocha-lcov-reporter": "*",
-    "should": "^4.6.0",
-    "sinon": "^1.12.2"
+    "should": "^4.6.0"
   },
   "engines": {
     "node": ">=0.8.0",
