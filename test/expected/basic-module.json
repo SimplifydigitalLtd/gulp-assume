@@ -1,0 +1,370 @@
+{
+	"type": "Program",
+	"body": [{
+		"type": "ExpressionStatement",
+		"expression": {
+			"type": "CallExpression",
+			"callee": {
+				"type": "FunctionExpression",
+				"id": null,
+				"params": [],
+				"defaults": [],
+				"body": {
+					"type": "BlockStatement",
+					"body": [{
+						"type": "ExpressionStatement",
+						"expression": {
+							"type": "Literal",
+							"value": "use strict",
+							"raw": "'use strict'"
+						}
+					},
+						{
+							"type": "FunctionDeclaration",
+							"id": {
+								"type": "Identifier",
+								"name": "CommandHistoryViewModel"
+							},
+							"params": [{
+								"type": "Identifier",
+								"name": "params"
+							}],
+							"defaults": [],
+							"body": {
+								"type": "BlockStatement",
+								"body": [{
+									"type": "VariableDeclaration",
+									"declarations": [{
+										"type": "VariableDeclarator",
+										"id": {
+											"type": "Identifier",
+											"name": "self"
+										},
+										"init": {
+											"type": "ThisExpression"
+										}
+									}],
+									"kind": "var"
+								},
+									{
+										"type": "ExpressionStatement",
+										"expression": {
+											"type": "AssignmentExpression",
+											"operator": "=",
+											"left": {
+												"type": "MemberExpression",
+												"computed": false,
+												"object": {
+													"type": "Identifier",
+													"name": "self"
+												},
+												"property": {
+													"type": "Identifier",
+													"name": "commandHistory"
+												}
+											},
+											"right": {
+												"type": "CallExpression",
+												"callee": {
+													"type": "MemberExpression",
+													"computed": false,
+													"object": {
+														"type": "Identifier",
+														"name": "ko"
+													},
+													"property": {
+														"type": "Identifier",
+														"name": "observableArray"
+													}
+												},
+												"arguments": []
+											}
+										}
+									},
+									{
+										"type": "VariableDeclaration",
+										"declarations": [{
+											"type": "VariableDeclarator",
+											"id": {
+												"type": "Identifier",
+												"name": "handleBasicInformation"
+											},
+											"init": {
+												"type": "FunctionExpression",
+												"id": null,
+												"params": [{
+													"type": "Identifier",
+													"name": "basicInfo"
+												}],
+												"defaults": [],
+												"body": {
+													"type": "BlockStatement",
+													"body": [{
+														"type": "ExpressionStatement",
+														"expression": {
+															"type": "CallExpression",
+															"callee": {
+																"type": "MemberExpression",
+																"computed": false,
+																"object": {
+																	"type": "Identifier",
+																	"name": "self"
+																},
+																"property": {
+																	"type": "Identifier",
+																	"name": "commandHistory"
+																}
+															},
+															"arguments": [{
+																"type": "MemberExpression",
+																"computed": false,
+																"object": {
+																	"type": "MemberExpression",
+																	"computed": false,
+																	"object": {
+																		"type": "Identifier",
+																		"name": "basicInfo"
+																	},
+																	"property": {
+																		"type": "Identifier",
+																		"name": "history"
+																	}
+																},
+																"property": {
+																	"type": "Identifier",
+																	"name": "commandHistory"
+																}
+															}]
+														}
+													}]
+												},
+												"rest": null,
+												"generator": false,
+												"expression": false
+											}
+										}],
+										"kind": "var"
+									},
+									{
+										"type": "ExpressionStatement",
+										"expression": {
+											"type": "CallExpression",
+											"callee": {
+												"type": "MemberExpression",
+												"computed": false,
+												"object": {
+													"type": "Identifier",
+													"name": "postal"
+												},
+												"property": {
+													"type": "Identifier",
+													"name": "subscribe"
+												}
+											},
+											"arguments": [{
+												"type": "ObjectExpression",
+												"properties": [{
+													"type": "Property",
+													"key": {
+														"type": "Identifier",
+														"name": "channel"
+													},
+													"value": {
+														"type": "Literal",
+														"value": "customer",
+														"raw": "'customer'"
+													},
+													"kind": "init",
+													"method": false
+												},
+													{
+														"type": "Property",
+														"key": {
+															"type": "Identifier",
+															"name": "topic"
+														},
+														"value": {
+															"type": "Literal",
+															"value": "basicInfo",
+															"raw": "'basicInfo'"
+														},
+														"kind": "init",
+														"method": false
+													},
+													{
+														"type": "Property",
+														"key": {
+															"type": "Identifier",
+															"name": "callback"
+														},
+														"value": {
+															"type": "Identifier",
+															"name": "handleBasicInformation"
+														},
+														"kind": "init",
+														"method": false
+													}]
+											}]
+										}
+									},
+									{
+										"type": "ExpressionStatement",
+										"expression": {
+											"type": "CallExpression",
+											"callee": {
+												"type": "MemberExpression",
+												"computed": false,
+												"object": {
+													"type": "Identifier",
+													"name": "postal"
+												},
+												"property": {
+													"type": "Identifier",
+													"name": "publish"
+												}
+											},
+											"arguments": [{
+												"type": "ObjectExpression",
+												"properties": [{
+													"type": "Property",
+													"key": {
+														"type": "Identifier",
+														"name": "channel"
+													},
+													"value": {
+														"type": "Literal",
+														"value": "customer",
+														"raw": "'customer'"
+													},
+													"kind": "init",
+													"method": false
+												},
+													{
+														"type": "Property",
+														"key": {
+															"type": "Identifier",
+															"name": "topic"
+														},
+														"value": {
+															"type": "Literal",
+															"value": "refresh",
+															"raw": "'refresh'"
+														},
+														"kind": "init",
+														"method": false
+													},
+													{
+														"type": "Property",
+														"key": {
+															"type": "Identifier",
+															"name": "data"
+														},
+														"value": {
+															"type": "ObjectExpression",
+															"properties": [{
+																"type": "Property",
+																"key": {
+																	"type": "Identifier",
+																	"name": "topic"
+																},
+																"value": {
+																	"type": "Literal",
+																	"value": "basicInfo",
+																	"raw": "'basicInfo'"
+																},
+																"kind": "init",
+																"method": false
+															}]
+														},
+														"kind": "init",
+														"method": false
+													}]
+											}]
+										}
+									}]
+							},
+							"rest": null,
+							"generator": false,
+							"expression": false
+						},
+						{
+							"type": "ExpressionStatement",
+							"expression": {
+								"type": "AssignmentExpression",
+								"operator": "=",
+								"left": {
+									"type": "MemberExpression",
+									"computed": false,
+									"object": {
+										"type": "MemberExpression",
+										"computed": false,
+										"object": {
+											"type": "Identifier",
+											"name": "CommandHistoryViewModel"
+										},
+										"property": {
+											"type": "Identifier",
+											"name": "prototype"
+										}
+									},
+									"property": {
+										"type": "Identifier",
+										"name": "dispose"
+									}
+								},
+								"right": {
+									"type": "FunctionExpression",
+									"id": null,
+									"params": [],
+									"defaults": [],
+									"body": {
+										"type": "BlockStatement",
+										"body": []
+									},
+									"rest": null,
+									"generator": false,
+									"expression": false
+								}
+							}
+						},
+						{
+							"type": "ReturnStatement",
+							"argument": {
+								"type": "ObjectExpression",
+								"properties": [{
+									"type": "Property",
+									"key": {
+										"type": "Identifier",
+										"name": "viewModel"
+									},
+									"value": {
+										"type": "Identifier",
+										"name": "CommandHistoryViewModel"
+									},
+									"kind": "init",
+									"method": false
+								},
+									{
+										"type": "Property",
+										"key": {
+											"type": "Identifier",
+											"name": "template"
+										},
+										"value": {
+											"type": "Identifier",
+											"name": "templateMarkup"
+										},
+										"kind": "init",
+										"method": false
+									}]
+							}
+						}]
+				},
+				"rest": null,
+				"generator": false,
+				"expression": false
+			},
+			"arguments": []
+		}
+	}]
+}
